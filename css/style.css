@@ -17,6 +17,43 @@
     background-position: center center;
 }
 
+.box.active {
+    animation: box-background 15s infinite
+}
+
+@keyframes box-background {
+    0% {
+        background: url(https://img.freepik.com/premium-photo/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand_42044-1057.jpg?w=2000);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    25% {
+        background: url(https://parade.com/.image/t_share/MTkwNTc1ODgzNTIyODExMDA1/all-that-you-will-be.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background: url(https://hips.hearstapps.com/hmg-prod/images/how-to-write-a-love-letter-1608316069.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    75% {
+        background: url(https://www.inspirationde.com/wp-content/uploads/2016/05/justloveo-1462468988k48gn.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    100% {
+        background: url(https://hygglo.imgix.net/products/78a194_marry-me-bokstaver-med-led-lys.jpg?cs=strip&fm=pjpg&q=70&auto=enhance);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
+
 .heart {
     position: relative;
     top: 250px;
@@ -29,6 +66,14 @@
     animation: box 5s infinite;
     box-shadow: 1px 5px 30px white;
     /* margin: 15px 15px; */
+}
+
+.heart.active {
+    opacity: .3;
+}
+
+.heart.active:hover {
+    opacity: 1;
 }
 
 .stick {
@@ -61,7 +106,7 @@
     rotate: 47deg;
     background: #e75e5e;
     /* box-shadow: 1px 1px 5px crimson; */
-    animation: heart 5s infinite;
+    animation: heart 15s infinite;
     /* display: none; */
 }
 
@@ -77,7 +122,7 @@
     rotate: -47deg;
     background: #e75e5e;
     /* box-shadow: 1px 1px 5px crimson; */
-    animation: heart 5s infinite;
+    animation: heart 15s infinite;
 }
 
 @keyframes heart {
@@ -85,13 +130,13 @@
         background: #e75e5e;
     }
     25% {
-        background: #f01515;
+        background: #0ce7f7;
     }
     50% {
         background: #222;
     }
     75% {
-        background: #f01515;
+        background: #0ce7f7;
     }
     100% {
         background: #e75e5e;
@@ -109,8 +154,18 @@
     }
 }
 
-.btn {
+.button {
     position: relative;
+    width: 200px;
+    height: 50px;
+    top: 550px;
+    left: 580px;
+    background: #fff;
+    color: black;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 @media (min-width:300px) {
