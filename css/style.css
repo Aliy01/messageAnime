@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(241, 116, 141);
+    display: flex;
+    justify-content: center;
+    background: url(https://img.freepik.com/premium-photo/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand_42044-1057.jpg?w=2000);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heart {
+    position: relative;
+    top: 250px;
+    width: 27.5%;
+    height: 350px;
+    justify-content: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    animation: box 5s infinite;
+    box-shadow: 1px 5px 30px white;
+    /* margin: 15px 15px; */
+}
+
+.stick {
+    position: absolute;
+    top: 65.5px;
+    left: -17px;
+    width: 50%;
+    height: 1px;
+    background: #222;
+}
+
+.stick-1 {
+    rotate: 30deg;
+}
+
+.stick-2 {
+    left: 280.5px;
+    rotate: -30deg;
+}
+
+.my-heart {
+    top: 70px;
+    position: relative;
+    left: 72px;
+    /* top: ; */
+    width: 120px;
+    height: 170px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    rotate: 47deg;
+    background: #e75e5e;
+    /* box-shadow: 1px 1px 5px crimson; */
+    animation: heart 5s infinite;
+    /* display: none; */
+}
+
+.my-heart-left {
+    /* position: absolute; */
+    position: relative;
+    /* top: 0px; */
+    left: -90px;
+    width: 120px;
+    height: 170px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    rotate: -47deg;
+    background: #e75e5e;
+    /* box-shadow: 1px 1px 5px crimson; */
+    animation: heart 5s infinite;
+}
+
+@keyframes heart {
+    0% {
+        background: #e75e5e;
+    }
+    25% {
+        background: #f01515;
+    }
+    50% {
+        background: #222;
+    }
+    75% {
+        background: #f01515;
+    }
+    100% {
+        background: #e75e5e;
+    }
+}
+
+@keyframes box {
+    0% {
+        position: absolute;
+        rotate: 0deg;
+    }
+    100% {
+        position: absolute;
+        rotate: 360deg;
+    }
+}
+
+.btn {
+    position: relative;
+}
+
+@media (min-width:300px) {
+    .heart {
+        top: 200px;
+        width: 30.5%;
+        height: 300px;
+        animation: none;
+    }
+    .stick {
+        top: 52px;
+        left: -14px;
+        width: 50%;
+        height: 1px;
+        background: #222;
+    }
+    .stick-1 {
+        rotate: 30deg;
+    }
+    .stick-2 {
+        left: 222.5px;
+        rotate: -30deg;
+    }
+}
+
+
+/* 
+@media (width:300px) {
+    .heart {
+        top: 200px;
+        width: 30.5%;
+        height: 100px;
+        animation: none;
+    }
+    .my-heart {
+        top: 70px;
+        position: relative;
+        left: 60px;
+        width: 180px;
+        height: 120px;
+        rotate: 50deg;
+    }
+    .my-heart-left {
+        position: relative;
+        left: -60px;
+        width: 180px;
+        height: 120px;
+        rotate: -50deg;
+    }
+} */
