@@ -11,7 +11,8 @@
     background: rgb(241, 116, 141);
     display: flex;
     justify-content: center;
-    background: url(https://img.freepik.com/premium-photo/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand_42044-1057.jpg?w=2000);
+    /* background: url(https://img.freepik.com/premium-photo/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand_42044-1057.jpg?w=2000); */
+    background: url(../img/affection-afterglow-backlit-blur-556667-1024x677-2.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center center;
